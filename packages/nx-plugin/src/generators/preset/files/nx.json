@@ -1,0 +1,22 @@
+{
+    "$schema": "./node_modules/nx/schemas/nx-schema.json",
+    "targetDefaults": {
+        "pre-build": {
+            "cache": true
+        },
+        "build": {
+            "cache": true,
+            "dependsOn": [
+                { "dependencies": true, "target": "build" },
+                { "target": "pre-build" }
+            ]
+        },
+        "dev": {
+            "dependsOn": [{ "dependencies": true, "target": "build" }]
+        },
+        "serve": {
+            "dependsOn": [{ "dependencies": true, "target": "build" }]
+        }
+    },
+    "defaultBase": "master"
+}

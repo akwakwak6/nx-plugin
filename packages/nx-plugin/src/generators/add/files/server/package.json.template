@@ -1,0 +1,13 @@
+{
+  "name": "<%= name %>",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "npx tsc",
+    "dev": "node ../../dist/apps/sync/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

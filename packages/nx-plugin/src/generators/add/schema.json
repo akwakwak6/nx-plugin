@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/schema",
+  "$id": "Add",
+  "title": "",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What name would you like to use?"
+    },
+    "type": {
+      "enum": ["web", "lib", "server"],
+      "x-prompt": {
+        "message": "Which type of app?",
+        "type": "list",
+        "items": [
+          {
+            "value": "web",
+            "label": "Web"
+          },
+          {
+            "value": "lib",
+            "label": "Lib"
+          },
+          {
+            "value": "server",
+            "label": "Server"
+          }
+        ]
+      }
+    }
+  },
+  "required": ["name"]
+}

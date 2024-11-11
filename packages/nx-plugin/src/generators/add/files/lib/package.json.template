@@ -1,0 +1,13 @@
+{
+  "name": "<%= name %>",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "npx tsc"
+  },
+  "main": "./dist/main.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

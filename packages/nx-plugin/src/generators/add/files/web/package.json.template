@@ -1,0 +1,13 @@
+{
+  "name": "<%= name %>",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "serve": "npx vite serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {}
+}

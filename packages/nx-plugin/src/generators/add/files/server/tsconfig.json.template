@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "../../dist/apps/<%= name %>",
+    "declarationMap": true,
+    "declaration": true
+  },
+  "files": ["src/main.ts"]
+}
